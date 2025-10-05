@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Blood Bank</title>
+  <link rel="stylesheet" href="static/css/theme.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #fff5f5; color: #333; }
+    header { background-color: #d32f2f; color: #fff; padding: 20px 30px; text-align: center; }
+    .container { max-width: 1000px; margin: 30px auto; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
+    h2 { color: #b10000; }
+    p { line-height: 1.6; font-size: 1.05em; }
+    .section { margin-bottom: 40px; }
+    .team, .contact { background: #ffeaea; padding: 15px; border-radius: 10px; }
+    footer { text-align: center; padding: 20px; background-color: #f8d7da; margin-top: 40px; color: #444; }
+  </style>
+  <script defer src="static/js/theme.js"></script>
+  <script defer src="static/js/api-client.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Optional: ping API
+      try { await api.healthCheck(); } catch {}
+    });
+  </script>
+  </head>
+<body>
+
+  <header>
+    <h1>About Us</h1>
+    <p>Empowering hospitals and saving lives through blood donation</p>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Our Mission</h2>
+      <p>Our mission is to ensure every hospital has timely access to safe, reliable blood by connecting donors, hospitals, and technology under one unified system.</p>
+    </div>
+    <div class="section">
+      <h2>Who We Are</h2>
+      <p>We are a team of healthcare professionals, software developers, and volunteers committed to building a digital-first blood bank management system. Our network spans across government hospitals, NGOs, and private healthcare providers.</p>
+    </div>
+    <div class="section">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Real-time blood stock updates</li>
+        <li>Donor registration and management</li>
+        <li>Hospital blood request handling</li>
+        <li>Emergency blood need alerts</li>
+        <li>Detailed tracking and transparency</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Why Donate With Us?</h2>
+      <p>Every two seconds, someone needs blood. Your donation helps save lives. We make the process easy, safe, and impactful—with complete transparency and hospital coordination.</p>
+    </div>
+    <div class="section team">
+      <h2>Our Team & Partners</h2>
+      <p>We work closely with certified doctors, local hospitals, and technical partners to maintain quality and integrity in blood management. Our partners include Red Cross, AIIMS, and various health NGOs.</p>
+    </div>
+    <div class="section contact">
+      <h2>Contact Us</h2>
+      <p><strong>Email:</strong> info@bloodbanksystem.org</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Location:</strong> 2nd Floor, HealthTech Building, New Delhi, India</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Blood Bank Management System. All rights reserved.
+  </footer>
+
+</body>
+</html>

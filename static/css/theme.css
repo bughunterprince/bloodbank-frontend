@@ -1,0 +1,17 @@
+/* Moved from root theme.css */
+/* Night mode (final fix for text visibility) */
+body.dark-mode { background: #1e1e2f; color: #f8f8ff !important; }
+body.dark-mode p, body.dark-mode span, body.dark-mode li, body.dark-mode small, body.dark-mode div, body.dark-mode a { color: #000000 !important; }
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4 { color: #ff3b3b !important; }
+footer.dark-mode { background-color: #252538 !important; color: #f5f5fa !important; }
+footer.dark-mode small, footer.dark-mode p, footer.dark-mode a { color: #e6e6f0 !important; }
+footer.dark-mode strong { color: #ff3b3b !important; }
+.success-stories { background:#fff8f8; padding:60px 20px; border-radius:20px; margin:40px auto; }
+.success-stories h2 { color:#b10000; margin-bottom:30px; }
+.stories { display:flex; flex-wrap:wrap; gap:25px; justify-content:center; }
+.story { background:white; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); padding:20px; max-width:280px; text-align:center; }
+.story img { width:100%; height:180px; object-fit:cover; border-radius:12px; margin-bottom:15px; background-color:#eee; }
+.story p { font-size:0.95em; color:#444; line-height:1.5; }
+.chart-section { text-align:center; margin:40px auto; max-width:700px; }
+.chart-section h2 { font-size:2em; color:#b10000; margin-bottom:20px; }
+body.dark-mode .chart-section h2 { color:#ffffff; }
