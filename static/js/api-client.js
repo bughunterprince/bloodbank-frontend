@@ -36,6 +36,21 @@ class BloodBankAPI {
         });
     }
 
+    async register(payload) {
+        // payload: { name, email, password, user_type }
+        return await this.request('/api/register', {
+            method: 'POST',
+            body: JSON.stringify(payload)
+        });
+    }
+
+    async verifyOtp(email, otp) {
+        return await this.request('/api/verify-otp', {
+            method: 'POST',
+            body: JSON.stringify({ email, otp })
+        });
+    }
+
     async logout() {
         return await this.request('/api/logout', {
             method: 'POST'
