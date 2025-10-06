@@ -26,7 +26,7 @@
       <label for="otp">Enter OTP</label>
       <input type="text" id="otp" name="otp" inputmode="numeric" pattern="[0-9]{4,8}" placeholder="Enter the code" required />
       <button type="submit">Verify</button>
-      <div class="hint">Tip: If OTP mode is console in backend, check Render logs for the code.</div>
+  <div class="hint">Tip: If email isn't configured, OTP is printed in backend logs.</div>
     </form>
     <div id="msg" class="link"></div>
   </div>
@@ -47,7 +47,7 @@
       const msg = document.getElementById('msg');
       if (res.success) {
         msg.innerHTML = `<span style='color:green;'>${res.data.message || 'Verified successfully'}</span>`;
-        setTimeout(() => { window.location.href = 'hosp_login.html'; }, 1200);
+        setTimeout(() => { window.location.href = 'login.html'; }, 1200);
       } else {
         msg.innerHTML = `<span style='color:red;'>${res.data?.error || res.data?.message || 'Invalid OTP'}</span>`;
       }

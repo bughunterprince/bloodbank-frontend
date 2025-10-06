@@ -31,13 +31,7 @@
       <label for="password">Password</label>
       <input type="password" id="password" name="password" minlength="6" required />
 
-      <label for="user_type">Account Type</label>
-      <select id="user_type" name="user_type" required>
-        <option value="">Select type</option>
-        <option value="hospital">Hospital</option>
-        <option value="donor">Donor</option>
-        <option value="admin">Admin</option>
-      </select>
+      <!-- Account type removed: only simple user registration allowed -->
 
       <button type="submit">Register</button>
       <div class="note">We'll send an OTP to your email to verify your account.</div>
@@ -45,7 +39,7 @@
 
     <div id="msg" class="link"></div>
 
-    <div class="link">Already have an account? <a href="hosp_login.html">Login</a></div>
+  <div class="link">Already have an account? <a href="login.html">Login</a></div>
   </div>
 
   <script src="static/js/api-client.js"></script>
@@ -56,8 +50,7 @@
       const payload = {
         name: form.name.value.trim(),
         email: form.email.value.trim(),
-        password: form.password.value,
-        user_type: form.user_type.value
+        password: form.password.value
       };
       const res = await api.register(payload);
       const msg = document.getElementById('msg');
