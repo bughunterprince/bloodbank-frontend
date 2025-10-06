@@ -113,10 +113,12 @@ function handleLoginForm() {
             
             if (result.success) {
                 showMessage('Login successful! Redirecting...');
-                // Admin still goes to dashboard; all others go to home
+                // Admin -> dashboard; Hospital -> hosp page; others -> home
                 setTimeout(() => {
                     if (result.data.user_type === 'admin') {
                         window.location.href = 'admin_dashboard.html';
+                    } else if (result.data.user_type === 'hospital') {
+                        window.location.href = 'hosp.html';
                     } else {
                         window.location.href = 'index.html';
                     }
